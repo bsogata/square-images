@@ -1,0 +1,11 @@
+.ui.card > .content.square-image {
+  height: 256px;
+}
+
+.ui.card > .content.square-image > img {
+  /*
+    Uses max-height to constrain the height of the images without stretching smaller images;
+    calc is used to account for the built-in padding for images in Semantic UI cards.
+  */
+  max-height: calc(256px - 2em);
+}
